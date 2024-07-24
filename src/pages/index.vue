@@ -1,11 +1,3 @@
 <template>
-  <OiAmigo msg="Oi amigo" />
-  <OiAmigo msg="Oi amigo" />
-  <OiAmigo msg="Oi amigo" />
-  <OiAmigo msg="Oi amigo" />
-  <OiAmigo msg="Oi amigo" />
-  <OiAmigo msg="Oi amigo" />
-  <OiAmigo msg="Oi amigo" />
-  <OiAmigo msg="Oi amigo" />
-  <OiAmigo msg="Oi amigo" />
+  <AppHero />
 </template>
