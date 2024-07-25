@@ -1,12 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+
   devtools: { enabled: true },
+
   typescript: {
     typeCheck: true,
   },
-  srcDir: 'src/',
 
+  srcDir: 'src/',
   css: ['~/styles/styles.scss'],
 
   app: {
@@ -31,6 +33,14 @@ export default defineNuxtConfig({
           content: '#222222',
         },
       ],
+    },
+  },
+  modules: ['@nuxt/image'],
+
+  runtimeConfig: {
+    apiKey: process.env.API_KEY,
+    public: {
+      apiUrl: process.env.API_URL,
     },
   },
 })

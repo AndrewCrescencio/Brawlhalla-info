@@ -1,0 +1,3 @@
+<template>
+  <SectionLegends />
+</template>
