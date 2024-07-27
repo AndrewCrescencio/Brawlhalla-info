@@ -16,17 +16,18 @@ const { data } = await useFetch('/api/legends')
           :image="legend.legend_image"
         />
       </template>
-      {{ data }}
     </div>
   </template>
 </template>
 <style>
 .legends-grid {
-  /* background-color: red !important; */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
-  gap: calc(var(--pico-typography-spacing-vertical) * 2);
+  grid-template-columns: repeat(auto-fill, minmax(134px, 1fr));
+  column-gap: 16px;
+  row-gap: 24px;
   @media (min-width: 768px) {
+    column-gap: 24px;
+    row-gap: calc(var(--pico-typography-spacing-vertical) * 2);
     grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
   }
 }

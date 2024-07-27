@@ -5,9 +5,9 @@
         <li>
           <NuxtLink to="/legends">Legends</NuxtLink>
         </li>
-        <li>
+        <!-- <li>
           <NuxtLink to="/rankings">Rankings</NuxtLink>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </header>
