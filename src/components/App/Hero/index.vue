@@ -3,7 +3,7 @@
     <h1>Brawlhalla Info</h1>
     <h2>
       information about <NuxtLink to="/legends">legends</NuxtLink> and
-      <NuxtLink to="/rankings">leaderboards</NuxtLink>
+      <NuxtLink to="/rankings/1v1/us-e/1">leaderboards</NuxtLink>
     </h2>
   </section>
 </template>
