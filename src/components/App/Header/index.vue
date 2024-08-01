@@ -6,7 +6,7 @@
           <NuxtLink to="/legends">Legends</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/rankings/1v1/us-1/1">Rankings</NuxtLink>
+          <NuxtLink to="/rankings/1v1/us-e/1">Rankings</NuxtLink>
         </li>
       </ul>
     </nav>
