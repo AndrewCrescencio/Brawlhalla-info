@@ -4,21 +4,16 @@ const props = defineProps({
 })
 </script>
 <template>
-  <!-- {{ props.rankings }} -->
   <div class="tableRankings">
     <div class="tableRankings__container">
       <table>
         <thead>
           <tr>
-            <!-- <th scope="col">Planet</th>
-          <th scope="col">Diameter (km)</th>
-          <th scope="col">Distance to Sun (AU)</th>
-          <th scope="col">Orbit (days)</th> -->
             <th>Rank</th>
             <th>Region</th>
             <th>Name</th>
-            <th>Tier</th>
-            <th>Win-Loss</th>
+            <th style="width: 100%">Tier</th>
+            <th style="min-width: 180px">Win-Loss</th>
             <th>Season Rating</th>
             <th>Peak Rating</th>
           </tr>
@@ -40,15 +35,10 @@ const props = defineProps({
 </template>
 <style lang="scss" scoped>
 .tableRankings {
-  // background-color: red;
-
+  margin-top: 16px;
   &__container {
-    // transform: rotateX(180deg);
     overflow: auto;
     max-height: 70dvh;
-    table {
-      // transform: rotateX(180deg);
-    }
   }
 }
 </style>
