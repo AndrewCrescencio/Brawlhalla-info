@@ -27,6 +27,7 @@ defineProps({
   text-align: center;
   text-decoration: none;
   padding: 12px;
+  display: block;
 
   background-color: rgba(255, 255, 255, 0.05);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
@@ -58,7 +59,7 @@ defineProps({
       margin: 0;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
     }
   }
