@@ -4,4 +4,8 @@
     <slot />
   </main>
 </template>
-<style lang="scss"></style>
+<style lang="scss">
+main {
+  padding-top: 0 !important;
+}
+</style>
