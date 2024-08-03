@@ -5,19 +5,21 @@ const { data } = await useFetch('/api/legends')
 </script>
 
 <template>
-  <h1>Meet the legends</h1>
+  <section class="container">
+    <h1>Meet the legends</h1>
 
-  <template v-if="data">
-    <div class="legends-grid">
-      <template v-for="legend in data" :key="legend.legend_id">
-        <CardLegend
-          :id="legend.legend_id"
-          :name="legend.bio_name"
-          :image="legend.legend_image"
-        />
-      </template>
-    </div>
-  </template>
+    <template v-if="data">
+      <div class="legends-grid">
+        <template v-for="legend in data" :key="legend.legend_id">
+          <CardLegend
+            :id="legend.legend_id"
+            :name="legend.bio_name"
+            :image="legend.legend_image"
+          />
+        </template>
+      </div>
+    </template>
+  </section>
 </template>
 <style>
 .legends-grid {
