@@ -19,7 +19,7 @@ const props = defineProps({
           </tr>
         </thead>
         <tbody>
-          <tr v-for="player in rankings" :key="player.rank">
+          <tr v-for="player in props.rankings" :key="player.rank">
             <th scope="row">{{ player.rank }}</th>
             <td>{{ player.region }}</td>
             <td>{{ player.name ? player.name : player.teamname }}</td>

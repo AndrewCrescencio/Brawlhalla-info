@@ -8,8 +8,5 @@ const { data } = await useFetch(`/api/rankings/${mode}/${region}/${page}`)
 </script>
 
 <template>
-  <h1>Game Rankings</h1>
-  <Filter />
-  <Pagination />
-  <Table v-if="data" :rankings="data" />
+  <SectionRankings v-if="data" :rankings="data" />
 </template>
