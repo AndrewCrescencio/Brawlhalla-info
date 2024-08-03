@@ -20,10 +20,10 @@ const { mode, region, page } = route.params
     </NuxtLink>
     <button v-else disabled>
       <IconArrowBack />
-      <!-- prev -->
       <span class="sr-only">prev</span>
     </button>
     <NuxtLink
+      v-if="Number(page) < 1000"
       role="button"
       :to="{
         name: 'rankings-mode-region-page',
@@ -33,6 +33,10 @@ const { mode, region, page } = route.params
       <IconArrowFoward />
       <span class="sr-only">next</span>
     </NuxtLink>
+    <button v-else disabled>
+      <IconArrowFoward />
+      <span class="sr-only">next</span>
+    </button>
   </div>
 </template>
 <style lang="scss" scoped>
