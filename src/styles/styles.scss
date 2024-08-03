@@ -1,5 +1,5 @@
 @use '@picocss/pico/scss/pico' with (
   $theme-color: 'blue',
   $semantic-root-element: '#__nuxt',
-  $enable-semantic-container: true
+  $enable-semantic-container: false
 );
