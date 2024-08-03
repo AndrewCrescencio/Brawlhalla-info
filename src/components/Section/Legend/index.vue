@@ -31,7 +31,7 @@ const legendImage = computed(() => {
 </script>
 
 <template>
-  <section>
+  <section class="container">
     <NuxtImg :src="legendImage" width="" class="" />
 
     <div class="text">
@@ -56,6 +56,10 @@ const legendImage = computed(() => {
   </section>
 </template>
 <style lang="scss" scoped>
+section {
+  padding-top: calc(var(--pico-block-spacing-vertical) * 3);
+}
+
 img {
   display: block;
   grid-area: image;
