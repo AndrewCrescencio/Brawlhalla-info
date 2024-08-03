@@ -12,10 +12,6 @@ const backgroundStyles = computed(() => {
     ),url('${imgUrl}')`,
   }
 })
-
-function useImage() {
-  throw new Error('Function not implemented.')
-}
 </script>
 <template>
   <section class="appHero" :style="backgroundStyles">
