@@ -11,7 +11,3 @@
     ></path>
   </svg>
 </template>
-
-<script lang="ts">
-//Icon name: material-symbols:arrow-forward-ios-rounded
-</script>
