@@ -26,12 +26,6 @@ const backgroundStyles = computed(() => {
 </template>
 <style lang="scss" scoped>
 .appHero {
-  // background-image: linear-gradient(
-  //     to bottom,
-  //     rgba(0, 0, 0, 0.9) 0%,
-  //     rgba(0, 0, 0, 0.9) 100%
-  //   ),
-  //   url('/images/Banner_LegendGrid.webp');
   height: 70vh;
   background-position: center center;
   background-size: cover;
