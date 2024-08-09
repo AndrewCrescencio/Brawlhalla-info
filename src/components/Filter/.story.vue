@@ -1,6 +1,5 @@
 <template>
-    <Story title="Filter">
-      <Filter />
-    </Story>
-  </template>
-  
+  <Story title="Filter">
+    <Filter />
+  </Story>
+</template>
