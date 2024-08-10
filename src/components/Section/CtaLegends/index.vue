@@ -18,7 +18,7 @@ defineProps({ legends: { type: Array, required: true } })
         class="legends__card"
         :to="{ name: 'legend-id', params: { id: legend.legend_id } }"
       >
-        <NuxtImg :src="legend.legend_image" sizes="180px sm:50vw md:180px" />
+        <NuxtImg :src="legend.legend_image" width="85" height="85" />
         <p>{{ legend.bio_name }}</p>
       </NuxtLink>
     </div>
@@ -46,14 +46,10 @@ section {
     &:hover {
       transform: scale(1.05);
     }
-    @media (max-width: 768px) {
-      &:last-of-type {
-        display: none;
-      }
-    }
 
     p {
       padding-top: var(--pico-spacing);
+      font-size: 0.75rem;
     }
   }
 }
