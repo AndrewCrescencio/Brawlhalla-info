@@ -12,7 +12,7 @@ const props = defineProps({
             <th>Rank</th>
             <th>Region</th>
             <th>Name</th>
-            <th style="width: 100%">Tier</th>
+            <th>Tier</th>
             <th style="min-width: 180px">Win-Loss</th>
             <th>Season Rating</th>
             <th>Peak Rating</th>
@@ -22,8 +22,12 @@ const props = defineProps({
           <tr v-for="player in props.rankings" :key="player.rank">
             <th scope="row">{{ player.rank }}</th>
             <td>{{ player.region }}</td>
-            <td>{{ player.name ? player.name : player.teamname }}</td>
-            <td>{{ player.tier }}</td>
+            <td>
+              {{ player.name ? player.name : player.teamname }}
+            </td>
+            <td v-if="player.tier">
+              <RankingBadge :ranking="player.tier" />
+            </td>
             <td>{{ player.wins }} - {{ player.games - player.wins }}</td>
             <td>{{ player.rating }}</td>
             <td>{{ player.peak_rating }}</td>
