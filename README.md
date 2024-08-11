@@ -6,7 +6,7 @@
   <p align="center">
     Brawlhalla Legends Info and Top Player Ranking Stats
     <br />
-    <a href="https://brawlhalla-info2.vercel.app/">View Demo</a>
+    <a href="https://brawlhalla-info.vercel.app/">View Demo</a>
   </p>
 </div>
 
@@ -37,7 +37,7 @@
 
 ## About The Project
 
-[![Preview][product-screenshot]](https://brawlhalla-info2.vercel.app/)
+[![Preview][product-screenshot]](https://brawlhalla-info.vercel.app/)
 
 Website built using Brawlhalla game API data.
 
@@ -53,19 +53,19 @@ The application data comes from Brawlhalla's official Beta API. https://dev.braw
 
 ## Cloning the Project
 
-remember that this application consumes data from the Brawlhalla API
-
-you can request a Brawlhalla API key by sending an email to api@brawlhalla.com - https://dev.brawlhalla.com/
-
 ### Prerequisites
+
+This application consumes data from the Brawlhalla API. You can request a Brawlhalla API key by sending an email to api@brawlhalla.com - https://dev.brawlhalla.com/
 
 - npm
 - API key
 
+<br/>
+
 Clone the repository
 
 ```bash
-git clone https://github.com/AndrewCrescencio/brawlhalla-info2.git
+git clone https://github.com/AndrewCrescencio/brawlhalla-info.git
 ```
 
 Create a .env file and use your API key (.env.example as an example)
