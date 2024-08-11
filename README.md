@@ -53,14 +53,14 @@ The application data comes from Brawlhalla's official Beta API. https://dev.braw
 
 ## Cloning the Project
 
-remember that this application consumes data from the Brawlhalla API
-
-you can request a Brawlhalla API key by sending an email to api@brawlhalla.com - https://dev.brawlhalla.com/
-
 ### Prerequisites
+
+This application consumes data from the Brawlhalla API. You can request a Brawlhalla API key by sending an email to api@brawlhalla.com - https://dev.brawlhalla.com/
 
 - npm
 - API key
+
+<br/>
 
 Clone the repository
 
