@@ -22,6 +22,7 @@ const { mode, region, page } = route.params
       <IconArrowBack />
       <span class="sr-only">prev</span>
     </button>
+    <slot> </slot>
     <NuxtLink
       v-if="Number(page) < 1000"
       role="button"
@@ -43,6 +44,28 @@ const { mode, region, page } = route.params
 .pagination {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+
+  button:disabled {
+    pointer-events: all;
+  }
+
+  @media (min-width: 768px) {
+    column-gap: var(--pico-spacing);
+  }
+
+  @media (max-width: 768px) {
+    a[role='button']:first-child,
+    button:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    a[role='button']:last-child,
+    button:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
 }
 .sr-only {
   position: absolute;

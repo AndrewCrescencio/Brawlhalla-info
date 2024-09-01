@@ -6,8 +6,9 @@ const props = defineProps({
 <template>
   <section class="container">
     <h1>Game Rankings</h1>
-    <Filter />
-    <Pagination />
+    <Pagination>
+      <Filter />
+    </Pagination>
     <Table v-if="props.rankings" :rankings="props.rankings" />
   </section>
 </template>

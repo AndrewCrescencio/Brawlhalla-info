@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { navigateTo, useRoute, useRouter } from 'nuxt/app'
-import { reactive, ref, watch, onMounted } from 'vue'
+import { reactive, ref, watch, onMounted, nextTick } from 'vue'
 
 const router = useRouter()
 const route = useRoute()
@@ -46,8 +46,7 @@ onMounted(() => {
 <template>
   <div class="filter">
     <label for="region">
-      Region
-      <!-- {{ filter.region }} -->
+      <p>Region</p>
       <select
         name="region"
         id="region"
@@ -61,8 +60,7 @@ onMounted(() => {
     </label>
 
     <label for="mode">
-      Mode
-      <!-- {{ filter.mode }} -->
+      <p>Mode</p>
       <select
         name="mode"
         id="mode"
@@ -78,7 +76,27 @@ onMounted(() => {
 </template>
 <style lang="scss" scoped>
 .filter {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  @media (min-width: 768px) {
+    column-gap: var(--pico-spacing);
+  }
+  label {
+    p {
+      margin-bottom: 0;
+      padding-left: var(--pico-form-element-spacing-horizontal);
+    }
+  }
+  label,
+  select {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  @media (max-width: 768px) {
+    select {
+      border-radius: 0;
+    }
+  }
 }
 </style>
