@@ -15,5 +15,9 @@ const props = defineProps({
 <style lang="scss" scoped>
 section {
   padding-top: calc(var(--pico-block-spacing-vertical) * 3);
+
+  h1 {
+    margin-bottom: calc(var(--pico-block-spacing-vertical) * 2);
+  }
 }
 </style>
