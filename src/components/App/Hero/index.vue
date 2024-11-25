@@ -1,16 +1,22 @@
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
+
+const isMounted = ref(false)
 
 const img = useImage()
 const backgroundStyles = computed(() => {
   const imgUrl = img('/images/Banner_LegendGrid.webp')
-  return {
+  return isMounted.value && {
     backgroundImage: `linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0.9) 100%
     ),url('${imgUrl}')`,
   }
+})
+
+onMounted(() => {
+  isMounted.value = true
 })
 </script>
 <template>
