@@ -5,7 +5,7 @@
         <ul>
           <li>
             <NuxtLink to="/">
-              <NuxtImg src="/images/logo.png" width="48" height="48" />
+              <NuxtImg src="/images/logo.png" width="48" height="48" alt="App logo that is photo of Bödvar's head" />
             </NuxtLink>
           </li>
         </ul>
