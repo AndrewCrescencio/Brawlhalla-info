@@ -13,22 +13,22 @@
     "story:preview": "histoire preview"
   },
   "dependencies": {
-    "@nuxt/image": "^1.7.0",
+    "@nuxt/image": "^1.8.1",
     "@picocss/pico": "^2.0.6",
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.14.1592",
     "vue": "latest"
   },
   "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
   "devDependencies": {
     "@histoire/plugin-nuxt": "^0.17.17",
     "@histoire/plugin-vue": "^0.17.17",
-    "@types/node": "^20.14.12",
-    "eslint": "^9.7.0",
+    "@types/node": "^22.9.1",
+    "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-vue": "^9.27.0",
+    "eslint-plugin-vue": "^9.31.0",
     "histoire": "^0.17.17",
-    "sass": "^1.77.8",
-    "typescript": "^5.5.3",
-    "vue-tsc": "^2.0.26"
+    "sass": "^1.81.0",
+    "vue-tsc": "2.0.29",
+    "typescript": "5.6.2"
   }
 }
