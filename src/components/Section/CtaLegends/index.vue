@@ -17,7 +17,7 @@ defineProps({ legends: { type: Array, required: true } })
         class="legends__card"
         :to="{ name: 'legend-id', params: { id: legend.legend_id } }"
       >
-        <NuxtImg :src="legend.legend_image" width="85" height="85" />
+        <NuxtImg :src="legend.legend_image" width="85" height="85" :alt="`${legend.bio_name} character photo`"/>
         <p>{{ legend.bio_name }}</p>
       </NuxtLink>
     </div>
